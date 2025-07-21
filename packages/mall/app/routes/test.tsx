@@ -1,5 +1,5 @@
 
-import { Button} from 'share-lib';
+import { Button} from 'mingUI';
 
 
 export default function Test() {
