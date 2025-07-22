@@ -54,4 +54,8 @@ const SlideBlock: React.FC<SlideItemProps> = ({
     )
 }
 
-export default SlideBlock;
+export {
+    SlideBlock,
+    SlideItem,
+    SlideItemProps
+};

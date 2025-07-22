@@ -50,4 +50,8 @@ const ListBlock: React.FC<ListBlockProps> = ({
     );
 };
 
-export default ListBlock;
+export  {
+    ListBlock,
+    ListBlockProps,
+    ListItem,
+};

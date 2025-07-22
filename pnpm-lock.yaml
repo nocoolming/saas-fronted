@@ -18,6 +18,9 @@ importers:
 
   packages/admin:
     dependencies:
+      '@measured/puck':
+        specifier: ^0.19.3
+        version: 0.19.3(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@react-router/node':
         specifier: ^7.7.0
         version: 7.7.0(react-router@7.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)

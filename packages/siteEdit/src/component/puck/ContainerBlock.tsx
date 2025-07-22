@@ -2,7 +2,7 @@
 import React from 'react';
 import { DropZone } from "@measured/puck";
 
-export default function ContainerBlock() {
+export function ContainerBlock() {
     return (
         <div>
             <DropZone
