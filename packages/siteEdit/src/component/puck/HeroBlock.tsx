@@ -1,3 +1,4 @@
+import React from "react";
 
 interface HeroProps {
     bgImageUrl: string;
@@ -22,4 +23,4 @@ const HeroBlock: React.FC<HeroProps> = ({
     )
 }
 
-export { HeroBlock, HeroBlock }
+export { HeroProps, HeroBlock }

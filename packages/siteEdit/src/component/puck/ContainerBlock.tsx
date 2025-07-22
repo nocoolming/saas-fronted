@@ -1,4 +1,6 @@
-import {DropZone} from "@measured/puck";
+
+import React from 'react';
+import { DropZone } from "@measured/puck";
 
 export default function ContainerBlock() {
     return (
