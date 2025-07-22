@@ -20,6 +20,10 @@
         "size": "size-limit",
         "analyze": "size-limit --why"
     },
+    "dependencies": {
+        "@measured/puck": "^0.19.3",
+        "react-slideshow-image": "^4.3.2"
+    },
     "peerDependencies": {
         "react": ">=16"
     },
@@ -47,7 +51,6 @@
         }
     ],
     "devDependencies": {
-        "@measured/puck": "^0.19.3",
         "@size-limit/preset-small-lib": "^11.2.0",
         "@types/react": "^19.1.8",
         "@types/react-dom": "^19.1.6",
@@ -57,7 +60,6 @@
         "size-limit": "^11.2.0",
         "tsdx": "^0.14.1",
         "tslib": "^2.8.1",
-        "typescript": "^3.9.10",
-        "react-slideshow-image": "^4.3.2"
+        "typescript": "^3.9.10"
     }
 }

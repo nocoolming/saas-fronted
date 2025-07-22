@@ -12,10 +12,11 @@ type Props = {
     HeadingBlock: { title: string };
     TextBlock: { text: string };
     ImageBlock: {
-         url: string, 
-         alt: string,
-          width?: string, 
-          height?: string };
+        url: string,
+        alt: string,
+        width?: string,
+        height?: string
+    };
     ContainerBlock: {};
     ListBlock: {
         items: Array<{ id: string; title: string; description?: string }>;

@@ -1,15 +1,13 @@
 import { PuckEditor } from "siteEdit";
 
-
-export default function Edit() {
-
-  const d = {
+export default function Editor() {
+  const initialData = {
     "content": [
       {
         "type": "HeadingBlock",
         "props": {
           "id": "HeadingBlock-1234",
-          "title": "Hello, world"
+          "title": "Mall Editor"
         }
       }
     ],
@@ -18,14 +16,15 @@ export default function Edit() {
 
   return (
     <div>
-      <h1>Site editor</h1>
-
+      <h1>Mall Site Editor</h1>
+      
       <PuckEditor
-        data={d}
+        data={initialData}
         onPublish={async (data) => {
-          console.log('hello');
+          console.log('Mall editor published:', data);
+          // 这里可以保存到 mall 的数据库
         }}
       />
     </div>
-  )
+  );
 }

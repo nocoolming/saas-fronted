@@ -1,2 +1,3 @@
 export * from './component/index';
-export { default as puckConfig } from './puck.config';
+export { PuckEditor } from './PuckEditor';
+export type { PuckEditorProps } from './PuckEditor';
