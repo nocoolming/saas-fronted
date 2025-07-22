@@ -1,3 +1,4 @@
+import React from 'react';
 import type { Config } from "@measured/puck";
 import {
     TextBlock,
@@ -5,16 +6,24 @@ import {
     ContainerBlock,
     ListBlock,
     SlideBlock
-} from "siteEdit";
+} from './component/puck';
 
 type Props = {
     HeadingBlock: { title: string };
     TextBlock: { text: string };
-    ImageBlock: { url: string, alt: string, width?: string, height?: string };
+    ImageBlock: {
+         url: string, 
+         alt: string,
+          width?: string, 
+          height?: string };
     ContainerBlock: {};
     ListBlock: {
         items: Array<{ id: string; title: string; description?: string }>;
         listType?: 'ordered' | 'unordered';
+        title?: string;
+    };
+    SlideBlock: {
+        items: Array<{ id: string; imageUrl: string; url: string; alt: string }>;
         title?: string;
     };
 };
@@ -129,10 +138,8 @@ export const config: Config<Props> = {
             render: ({ items }) => (
                 <SlideBlock items={items} />
             )
-
         }
     },
-
 };
 
 export default config;
