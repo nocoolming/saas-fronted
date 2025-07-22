@@ -1,5 +1,5 @@
 
-import { Button} from 'mingUI';
+import { Button } from 'mingUI';
 
 
 export default function Test() {
@@ -7,12 +7,13 @@ export default function Test() {
         <div>
             <h1>test</h1>
 
-            <Button 
-            type='button'
-            text='asdf'
-            onClick={() => {
-                alert('hello')
-            }}
+            <Button
+                type='button'
+                text='asdf'
+                onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+                    alert('hello' );
+                    console.log(e);
+                }}
             />
             {/* <Button
                 type='button'
