@@ -6,14 +6,14 @@ const types = ['button', 'submit', 'reset'] as const;
 interface ButtonProps<T> {
     text: string;
     type: T;
-    onClick?: (e:  React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+    onClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
     default?: T | undefined,
 }
 
 const myButtonPropDef: ButtonProps<(typeof types)[number]> = {
     text: 'test',
     type: 'button',
-    onClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => { },
+    onClick: (e) => { e.preventDefault(); },
     default: undefined as (typeof types)[number] | undefined,
 }
 

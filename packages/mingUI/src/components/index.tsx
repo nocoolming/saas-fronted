@@ -1,5 +1,2 @@
-// import { myButtonPropDef } from "./Button";
-import { Button, myButtonPropDef, types, ButtonProps }
-    from './Button';
-
-export { Button, myButtonPropDef, types, ButtonProps };
+import { Button, myButtonPropDef, types, ButtonProps } from './button/index';
+export { Button, myButtonPropDef, types, ButtonProps }

@@ -10,7 +10,8 @@ export default function Test() {
             <Button
                 type='button'
                 text='asdf'
-                onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+                onClick={(e) => {
+                    e.preventDefault();
                     alert('hello' );
                     console.log(e);
                 }}
