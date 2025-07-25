@@ -12,7 +12,8 @@ export function ContainerBlock() {
                     'TextBlock',
                     'ImageBlock',
                     'HeadingBlock',
-
+                    'ContainerBlock',
+                    'HeadingBlock',
                 ]}
             />
         </div>

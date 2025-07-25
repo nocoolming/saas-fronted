@@ -1,0 +1,86 @@
+{
+  "en-us": {
+    "title": "Order",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "subtotal": "Subtotal",
+    "status": "Status",
+    "query": "Query",
+    "createTime": "Create Time",
+    "remove": "Remove",
+    "refund": "Refund",
+    "showDetails": "Show Details"
+  },
+  "ja-jp": {
+    "title": "注文",
+    "startTime": "開始時間",
+    "endTime": "終了時間",
+    "subtotal": "小計",
+    "status": "状態",
+    "query": "クエリ",
+    "createTime": "作成時間",
+    "remove": "削除",
+    "refund": "返金",
+    "showDetails": "詳細を表示"
+  },
+  "es-es": {
+    "title": "Pedido",
+    "startTime": "Hora de inicio",
+    "endTime": "Hora de finalización",
+    "subtotal": "Subtotal",
+    "status": "Estado",
+    "query": "Consulta",
+    "createTime": "Fecha de creación",
+    "remove": "Eliminar",
+    "refund": "Reembolso",
+    "showDetails": "Mostrar detalles"
+  },
+  "pt-pt": {
+    "title": "Encomenda",
+    "startTime": "Hora de início",
+    "endTime": "Hora de término",
+    "subtotal": "Subtotal",
+    "status": "Estado",
+    "query": "Consulta",
+    "createTime": "Data de criação",
+    "remove": "Remover",
+    "refund": "Reembolso",
+    "showDetails": "Mostrar detalhes"
+  },
+  "zh-cn": {
+    "title": "订单",
+    "startTime": "开始时间",
+    "endTime": "结束时间",
+    "subtotal": "小计",
+    "status": "状态",
+    "query": "查询",
+    "createTime": "创建时间",
+    "remove": "移除",
+    "refund": "退款",
+    "showDetails": "显示详情"
+  },
+  "de-de": {
+    "title": "Bestellung",
+    "startTime": "Startzeit",
+    "endTime": "Endzeit",
+    "subtotal": "Zwischensumme",
+    "status": "Status",
+    "query": "Abfrage",
+    "createTime": "Erstellungszeit",
+    "remove": "Entfernen",
+    "refund": "Rückerstattung",
+    "showDetails": "Details anzeigen"
+  },
+  "it-it": {
+    "title": "Ordine",
+    "startTime": "Ora di inizio",
+    "endTime": "Ora di fine",
+    "subtotal": "Subtotale",
+    "status": "Stato",
+    "query": "Richiesta",
+    "createTime": "Data di creazione",
+    "remove": "Rimuovi",
+    "refund": "Rimborso",
+    "showDetails": "Mostra dettagli"
+  }
+}

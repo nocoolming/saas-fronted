@@ -1,0 +1,56 @@
+{
+  "en-us": {
+    "h1": "Sign In",
+    "username": "User name",
+    "password": "Password",
+    "submit": "Submit"
+  },
+  "zh-cn": {
+    "h1": "登录",
+    "username": "用户名",
+    "password": "密码",
+    "submit": "提交"
+  },
+  "pt-br": {
+    "h1": "Entrar",
+    "username": "Nome de usuário",
+    "password": "Senha",
+    "submit": "Enviar"
+  },
+  "pt-pt": {
+    "h1": "Iniciar sessão",
+    "username": "Nome de utilizador",
+    "password": "Palavra-passe",
+    "submit": "Submeter"
+  },
+  "es-es": {
+    "h1": "Iniciar sesión",
+    "username": "Nombre de usuario",
+    "password": "Contraseña",
+    "submit": "Enviar"
+  },
+  "de-de": {
+    "h1": "Anmelden",
+    "username": "Benutzername",
+    "password": "Passwort",
+    "submit": "Absenden"
+  },
+  "ja-jp": {
+    "h1": "ログイン",
+    "username": "ユーザー名",
+    "password": "パスワード",
+    "submit": "送信"
+  },
+  "it-it": {
+    "h1": "Accedi",
+    "username": "Nome utente",
+    "password": "Password",
+    "submit": "Invia"
+  },
+  "fr-fr": {
+    "h1": "Connexion",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "submit": "Valider"
+  }
+}

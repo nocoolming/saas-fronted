@@ -1,0 +1,50 @@
+{
+  "en-us": {
+    "signIn": "Sign In",
+    "signOn": "Sign On",
+    "my": "my",
+    "logOut": "Logout"
+  },
+  "zh-cn": {
+    "signIn": "登录",
+    "signOn": "注册",
+    "my": "我的",
+    "logOut": "退出"
+  },
+  "pt-pt": {
+    "signIn": "Iniciar Sessão",
+    "signOn": "Registrar",
+    "my": "meu",
+    "logOut": "Sair"
+  },
+  "es-es": {
+    "signIn": "Iniciar Sesión",
+    "signOn": "Registrarse",
+    "my": "mi",
+    "logOut": "Cerrar Sesión"
+  },
+  "de-de": {
+    "signIn": "Anmelden",
+    "signOn": "Registrieren",
+    "my": "mein",
+    "logOut": "Abmelden"
+  },
+  "ja-jp": {
+    "signIn": "サインイン",
+    "signOn": "サインアップ",
+    "my": "マイ",
+    "logOut": "ログアウト"
+  },
+  "it-it": {
+    "signIn": "Accedi",
+    "signOn": "Registrati",
+    "my": "mio",
+    "logOut": "Esci"
+  },
+  "fr-fr": {
+    "signIn": "Se connecter",
+    "signOn": "S'inscrire",
+    "my": "mon",
+    "logOut": "Se déconnecter"
+  }
+}

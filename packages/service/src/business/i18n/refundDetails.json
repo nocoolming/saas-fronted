@@ -1,0 +1,44 @@
+{
+  "en-us": {
+    "refund": "Refund",
+    "summary": "Summary",
+    "refundAmount": "Refund amount",
+    "submit": "Submit"
+  },
+  "ja-jp": {
+    "refund": "返金",
+    "summary": "概要",
+    "refundAmount": "返金額",
+    "submit": "送信"
+  },
+  "es-es": {
+    "refund": "Reembolso",
+    "summary": "Resumen",
+    "refundAmount": "Cantidad de reembolso",
+    "submit": "Enviar"
+  },
+  "pt-pt": {
+    "refund": "Reembolso",
+    "summary": "Resumo",
+    "refundAmount": "Montante de reembolso",
+    "submit": "Submeter"
+  },
+  "de-de": {
+    "refund": "Erstattung",
+    "summary": "Zusammenfassung",
+    "refundAmount": "Erstattungsbetrag",
+    "submit": "Absenden"
+  },
+  "it-it": {
+    "refund": "Rimborso",
+    "summary": "Riepilogo",
+    "refundAmount": "Importo del rimborso",
+    "submit": "Invia"
+  },
+  "zh-cn": {
+    "refund": "退款",
+    "summary": "摘要",
+    "refundAmount": "退款金额",
+    "submit": "提交"
+  }
+}

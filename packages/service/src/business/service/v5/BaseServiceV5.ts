@@ -1,0 +1,57 @@
+import ming from "../../lib/Ming";
+import Model from "../../model/Model";
+
+
+export default abstract class BaseServiceV5<T extends Model> {
+    constructor() {
+        this.version = '1';
+    }
+
+    version: string;
+    serviceName: string;
+
+    async insert(o: T) {
+        return await this.post('insert', o);
+    }
+
+    async update(o: T) {
+        return await this.post('update', o);
+    }
+
+    async delete(o: T) {
+        return await this.post('delete', o);
+    }
+
+    async get(id: string) {
+        const result = await this.getAction(id);
+// console.log(result);
+        return result.value;
+    }
+
+    async getAll() {
+        return await this.getAction('all');
+    }
+
+
+    async post(action: string, o: any) {
+        const url: string = `${this.host()}/${action}`;
+
+        // console.log(url);
+        const res = await ming.post(url, o);
+
+        return res.data;
+    }
+
+    async getAction(action: string) {
+        const url: string = `${this.host()}/${action}`;
+
+        const res = await ming.get(url);
+
+        return res.data;
+    }
+
+
+    host() {
+        return `site/v${this.version}/${this.serviceName}`;
+    }
+}
