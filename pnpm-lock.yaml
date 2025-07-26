@@ -45,6 +45,9 @@ importers:
       react-router:
         specifier: ^7.7.0
         version: 7.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      service:
+        specifier: workspace:*
+        version: link:../service
       siteEdit:
         specifier: workspace:*
         version: link:../siteEdit

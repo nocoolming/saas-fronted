@@ -19,7 +19,7 @@ export default function Home({
   loaderData
 }: Route.ComponentProps) {
   const { env } = loaderData
-  console.log(JSON.stringify(env));
+  // console.log(JSON.stringify(env));
 
 
   return (
@@ -27,7 +27,7 @@ export default function Home({
       <h1>Home</h1>
 
       <p>api: {import.meta.env.VITE_API_SERVICE}</p>
-      <p>{env.API_SERVICE}</p>
+      <p>{env.VITE_USER_SERVICE}</p>
     </div>
   );
 }

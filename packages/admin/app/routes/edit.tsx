@@ -1,14 +1,14 @@
 import { PuckEditor } from "siteEdit";
 import type { Route } from "./+types/edit";
 
-export async function clientLoader({
+export async function loader({
   params,
-}) {
+}: Route.LoaderArgs) {
   const res = await fetch(`http://localhost:8080/site`)
   const result = await res.json();
 
   return {
-     result,
+    result,
   }
 }
 
