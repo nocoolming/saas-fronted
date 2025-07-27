@@ -14,7 +14,7 @@ class PageServiceV5 extends BaseServiceV5<Page> {
     }
 
 
-    async getPagesBySiteId(id:string){
+    async getPagesBySiteId(id: string) {
         const action = 'getPagesBySiteId';
 
         const params = id;
@@ -22,6 +22,13 @@ class PageServiceV5 extends BaseServiceV5<Page> {
         const pages = await this.post(action, params);
 
         return pages;
+    }
+
+    async save(page: Page) {
+        const action: string = 'save';
+        const result = await this.post(action, page);
+
+        return result;
     }
 }
 
