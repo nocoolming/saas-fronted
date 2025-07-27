@@ -1,14 +1,16 @@
 import BaseServiceV5 from "./BaseServiceV5";
 import User from "../../model/User";
 import ming from "../../lib/Ming";
+import { environment } from "../../../Environment";
 
 
-class UserServiceV5 extends BaseServiceV5<User> {
+export class UserServiceV5 extends BaseServiceV5<User> {
     constructor() {
         super();
 
         this.version = '1';
         this.serviceName = 'user';
+        this.apiUrl = environment.siteServiceUrl;
     }
 
     async signIn(o: SignInParam) {
