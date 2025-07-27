@@ -1,6 +1,8 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
 import dotenv from 'dotenv'
+import { useEffect } from "react";
+import { environment } from "service";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -9,16 +11,16 @@ export function meta({ }: Route.MetaArgs) {
   ];
 }
 
-export async function loader({ params }: Route.LoaderArgs) {
-  return {
-    env: process.env,
-  }
-}
+// export async function loader({ params }: Route.LoaderArgs) {
+//   return {
+//     env: process.env,
+//   }
+// }
 
 export default function Home({
-  loaderData
+  // loaderData
 }: Route.ComponentProps) {
-  const { env } = loaderData
+  // const { env } = loaderData
   // console.log(JSON.stringify(env));
 
 
@@ -27,7 +29,7 @@ export default function Home({
       <h1>Home</h1>
 
       <p>api: {import.meta.env.VITE_API_SERVICE}</p>
-      <p>{env.VITE_USER_SERVICE}</p>
+      {/* <p>{env.VITE_USER_SERVICE}</p> */}
     </div>
   );
 }

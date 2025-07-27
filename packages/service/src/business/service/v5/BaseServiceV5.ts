@@ -1,3 +1,4 @@
+import { environment } from "../../../Environment";
 import ming from "../../lib/Ming";
 import Model from "../../model/Model";
 
@@ -5,12 +6,16 @@ import Model from "../../model/Model";
 export default abstract class BaseServiceV5<T extends Model> {
     constructor() {
         this.version = '1';
+        this.serviceName = '';
+        this.apiUrl = environment.siteServiceUrl;
     }
 
     version: string;
     serviceName: string;
+    apiUrl: string;
 
     async insert(o: T) {
+    
         return await this.post('insert', o);
     }
 
@@ -34,9 +39,10 @@ export default abstract class BaseServiceV5<T extends Model> {
 
 
     async post(action: string, o: any) {
+        // debugger;
         const url: string = `${this.host()}/${action}`;
 
-        // console.log(url);
+        console.log(url);
         const res = await ming.post(url, o);
 
         return res.data;
@@ -52,6 +58,6 @@ export default abstract class BaseServiceV5<T extends Model> {
 
 
     host() {
-        return `site/v${this.version}/${this.serviceName}`;
+        return `${this.apiUrl}/site/v${this.version}/${this.serviceName}`;
     }
 }

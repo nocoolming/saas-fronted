@@ -9,6 +9,8 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { useEffect } from "react";
+import { environment } from "service";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -24,6 +26,16 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  console.log("There is Layout")
+
+  useEffect(() => {
+    // 初始化csr environment
+    environment.siteServiceUrl = import.meta.env.VITE_API_SERVICE;
+    environment.userServiceUrl = import.meta.env.VITE_USER_SERVICE;
+
+    console.log(JSON.stringify(environment));
+  }, [])
+
   return (
     <html lang="en">
       <head>
@@ -31,6 +43,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
+        <meta name="og:title" content="test"/>
       </head>
       <body>
         {children}
@@ -73,3 +86,4 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
     </main>
   );
 }
+

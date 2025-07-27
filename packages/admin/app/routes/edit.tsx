@@ -1,25 +1,27 @@
 import { PuckEditor } from "siteEdit";
 import type { Route } from "./+types/edit";
+import type { Page } from 'service';
+import {  PageServiceV5 } from 'service';
 
-export async function loader({
-  params,
-}: Route.LoaderArgs) {
-  const res = await fetch(`http://localhost:8080/site`)
-  const result = await res.json();
+// export async function loader({
+//   params,
+// }: Route.LoaderArgs) {
+//   const res = await fetch(`http://localhost:8080/site`)
+//   const result = await res.json();
 
-  return {
-    result,
-  }
-}
+//   return {
+//     result,
+//   }
+// }
 
 
 export default function Edit({
-  loaderData
+  // loaderData
 }: Route.ComponentProps) {
 
-  const { result } = loaderData;
+  // const { result } = loaderData;
 
-  console.log('loaderData: ' + JSON.stringify(loaderData));
+  // console.log('loaderData: ' + JSON.stringify(loaderData));
 
   const d = {
     "content": [
@@ -40,12 +42,25 @@ export default function Edit({
 
       <PuckEditor
         data={d}
-        onPublish={async (data) => {
-          console.log('hello');
-          console.log(data);
-          console.log(JSON.stringify(data));
-        }}
+        onPublish={async (data) => publish(data)}
       />
     </div>
   )
+}
+
+export async function publish(data) {
+  const pageService: PageServiceV5 = new PageServiceV5();
+
+  console.log(data);
+
+  console.log(JSON.stringify(data));
+
+  const dataString = JSON.stringify(data);
+
+  const page: Page = {
+    category: 'home',
+    content: dataString,
+  }
+
+  const result = await pageService.insert(page);
 }
