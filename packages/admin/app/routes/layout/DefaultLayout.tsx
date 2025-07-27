@@ -1,11 +1,11 @@
 import { Outlet } from "react-router";
 
-export default function DefaultLayout(){
+export default function DefaultLayout() {
     return (
-        <div>
-            <h2>Default Layout page</h2>
+        <div className="flex flex-col w-full justify-center items-center py-3">
 
-            <Outlet /> 
+
+            <Outlet />
         </div>
     )
 }

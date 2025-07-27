@@ -26,14 +26,14 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  console.log("There is Layout")
+  // console.log("There is Layout")
 
   useEffect(() => {
     // 初始化csr environment
     environment.siteServiceUrl = import.meta.env.VITE_API_SERVICE;
     environment.userServiceUrl = import.meta.env.VITE_USER_SERVICE;
 
-    console.log(JSON.stringify(environment));
+    // console.log(JSON.stringify(environment));
   }, [])
 
   return (

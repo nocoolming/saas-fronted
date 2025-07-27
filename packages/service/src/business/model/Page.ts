@@ -15,9 +15,7 @@ interface Page extends Model {
     site: Site;
     createUser: User;
     upgradeUser: User;
-    
 }
 
 // id bigint not null primary key,
-
 export {Page}

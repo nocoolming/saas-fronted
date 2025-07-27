@@ -10,10 +10,19 @@ class PageServiceV5 extends BaseServiceV5<Page> {
         this.serviceName = 'page';
         this.apiUrl = environment.siteServiceUrl;
 
-        console.log('apiUrl: ' + this.apiUrl);
+        // console.log('apiUrl: ' + this.apiUrl);
     }
 
 
+    async getPagesBySiteId(id:string){
+        const action = 'getPagesBySiteId';
+
+        const params = id;
+
+        const pages = await this.post(action, params);
+
+        return pages;
+    }
 }
 
 export { PageServiceV5 };

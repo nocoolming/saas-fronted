@@ -16,25 +16,25 @@ export class ServiceSimpleFactory {
     get(k) {
         switch (k) {
             case 'pageService': {
-                if (!this.cache(k)) {
+                if (!this.cache[k]) {
                     const o: PageServiceV5 = new PageServiceV5();
                     this.push(k, o);
-                    break;
                 }
+                break;
             }
             case 'platformUserService': {
                 if (!this.cache[k]) {
                     const o: platformUserService = new platformUserService();
                     this.push(k, o);
-                    break;
                 }
+                break;
             }
             case 'userService': {
                 if (!this.cache[k]) {
                     const o: UserServiceV5 = new UserServiceV5();
                     this.push(k,o);
-                    break;
                 }
+                break;
             }
         }
         if (this.cache[k]) {
@@ -45,5 +45,5 @@ export class ServiceSimpleFactory {
     }
 }
 
-const factory: ServiceSimpleFactory = new ServiceSimpleFactory();
-export { factory };
+const serviceFactory: ServiceSimpleFactory = new ServiceSimpleFactory();
+export { serviceFactory };

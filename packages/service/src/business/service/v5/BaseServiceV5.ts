@@ -42,7 +42,7 @@ export default abstract class BaseServiceV5<T extends Model> {
         // debugger;
         const url: string = `${this.host()}/${action}`;
 
-        console.log(url);
+        // console.log(url);
         const res = await ming.post(url, o);
 
         return res.data;

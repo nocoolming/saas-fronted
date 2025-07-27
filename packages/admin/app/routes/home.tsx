@@ -17,9 +17,7 @@ export function meta({ }: Route.MetaArgs) {
 //   }
 // }
 
-export default function Home({
-  // loaderData
-}: Route.ComponentProps) {
+export default function Home() {
   // const { env } = loaderData
   // console.log(JSON.stringify(env));
 

@@ -1,7 +1,8 @@
 import { PuckEditor } from "siteEdit";
-import type { Route } from "./+types/edit";
+import type { Route } from "../+types/edit";
 import type { Page } from 'service';
 import {  PageServiceV5 } from 'service';
+import { useSearchParams } from "react-router";
 
 // export async function loader({
 //   params,
@@ -19,6 +20,10 @@ export default function Edit({
   // loaderData
 }: Route.ComponentProps) {
 
+  let [searchParams] = useSearchParams();
+  
+  console.log('searchParams');
+  console.log(searchParams);
   // const { result } = loaderData;
 
   // console.log('loaderData: ' + JSON.stringify(loaderData));
@@ -37,7 +42,7 @@ export default function Edit({
   };
 
   return (
-    <div>
+    <div className="w-full md:mx-auto">
       <h1>Site editor</h1>
 
       <PuckEditor
@@ -49,6 +54,8 @@ export default function Edit({
 }
 
 export async function publish(data) {
+  
+
   const pageService: PageServiceV5 = new PageServiceV5();
 
   console.log(data);
