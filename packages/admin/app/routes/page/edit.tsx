@@ -63,9 +63,3 @@ export default function Edit({
     </div>
   )
 }
-
-export async function publish(data) {
-
-
- 
-}

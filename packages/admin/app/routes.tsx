@@ -10,6 +10,7 @@ export default
 
         layout("routes/layout/DefaultLayout.tsx", [
             route("page/edit/:id", "routes/page/edit.tsx"),
+            route("page/preview/:id", "routes/page/preview.tsx"),
             route("page", "routes/page/index.tsx")
         ]),
 

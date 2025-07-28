@@ -3,6 +3,7 @@ import { Welcome } from "../welcome/welcome";
 import dotenv from 'dotenv'
 import { useEffect } from "react";
 import { environment } from "service";
+import { Link } from "react-router";
 
 export function meta({ }: Route.MetaArgs) {
   return [
@@ -28,6 +29,8 @@ export default function Home() {
 
       <p>api: {import.meta.env.VITE_API_SERVICE}</p>
       {/* <p>{env.VITE_USER_SERVICE}</p> */}
+
+      <Link to='/page'>Page manage</Link>
     </div>
   );
 }
