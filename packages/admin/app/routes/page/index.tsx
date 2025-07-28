@@ -42,11 +42,17 @@ export default function PageIndex({
                             <Link to={`edit/${p.id}`}>
                                 <span>{p.category}</span>
                             </Link>
+
+                            <Link to={`preview/${p.id}`}>
+                                <span>Preview {p.category}</span>
+                            </Link>
                         </li>)
                     )}
                 </ol>
 
             }
+
+
         </div>
     )
 }
