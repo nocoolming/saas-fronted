@@ -16,9 +16,9 @@ export class DomainServiceV5 extends BaseServiceV5<Domain> {
         const domain = request.headers.get("host");
         // console.log(`Getting domain from ${domain}`);
         const action = `domain/${domain}`;
-// console.log(`url: ${url} version: ${this.version}`);
-        const site: Site = await this.getAction(action).value;
-
+        // console.log(`url: ${url} version: ${this.version}`);
+        const result = await this.getAction(action);
+        const site: Site = result.value;
         return site;
     }
 
