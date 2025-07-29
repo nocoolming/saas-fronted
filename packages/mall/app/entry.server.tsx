@@ -11,8 +11,23 @@ import { createReadableStreamFromReadable } from "@remix-run/node";
 import { RemixServer } from "@remix-run/react";
 import { isbot } from "isbot";
 import { renderToPipeableStream } from "react-dom/server";
+import { environment } from "service";
 
 const ABORT_DELAY = 5_000;
+
+// 在服务端入口初始化 environment
+function initializeEnvironment() {
+  environment.siteServiceUrl = process.env.API_SERVICE || 'http://localhost:8080';
+  environment.userServiceUrl = process.env.USER_SERVICE || 'http://localhost:3000';
+  
+  console.log('Environment initialized in Remix server:', {
+    siteServiceUrl: environment.siteServiceUrl,
+    userServiceUrl: environment.userServiceUrl
+  });
+}
+
+// 应用启动时立即初始化
+initializeEnvironment();
 
 export default function handleRequest(
   request: Request,

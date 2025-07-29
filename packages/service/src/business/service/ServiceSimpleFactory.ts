@@ -1,4 +1,5 @@
 import { PageServiceV5 } from "./v5";
+import { DomainServiceV5 } from "./v5/DomainServiceV5";
 import { UserServiceV5 as platformUserService } from "./v5/platform/UserServiceV5";
 import { UserServiceV5 } from "./v5/UserServiceV5";
 
@@ -32,6 +33,13 @@ export class ServiceSimpleFactory {
             case 'userService': {
                 if (!this.cache[k]) {
                     const o: UserServiceV5 = new UserServiceV5();
+                    this.push(k,o);
+                }
+                break;
+            }
+            case 'domainService': {
+                if (!this.cache[k]) {
+                    const o: DomainServiceV5 = new DomainServiceV5();
                     this.push(k,o);
                 }
                 break;

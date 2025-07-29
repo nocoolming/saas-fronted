@@ -15,11 +15,12 @@
     "@remix-run/react": "^2.16.8",
     "@remix-run/serve": "^2.16.8",
     "isbot": "^4.1.0",
+    "mingUI": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "mingUI": "workspace:*",
-    "siteEdit": "workspace:*",
-    "service": "workspace:*"
+    "remix-utils": "^8.7.0",
+    "service": "workspace:*",
+    "siteEdit": "workspace:*"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.16.8",

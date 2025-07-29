@@ -13,11 +13,11 @@
     "@react-router/serve": "^7.7.0",
     "dotenv": "^17.2.1",
     "isbot": "^5.1.27",
-    "mingUI": "workspace:*",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router": "^7.7.0",
     "siteEdit": "workspace:*",
+    "mingUI": "workspace:*",
     "service": "workspace:*"
   },
   "devDependencies": {

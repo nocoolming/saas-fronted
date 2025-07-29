@@ -15,7 +15,7 @@ export default abstract class BaseServiceV5<T extends Model> {
     apiUrl: string;
 
     async insert(o: T) {
-    
+
         return await this.post('insert', o);
     }
 
@@ -29,7 +29,7 @@ export default abstract class BaseServiceV5<T extends Model> {
 
     async get(id: string) {
         const result = await this.getAction(id);
-// console.log(result);
+        // console.log(result);
         return result.value;
     }
 
@@ -51,6 +51,7 @@ export default abstract class BaseServiceV5<T extends Model> {
     async getAction(action: string) {
         const url: string = `${this.host()}/${action}`;
 
+        // console.log(url);
         const res = await ming.get(url);
 
         return res.data;
@@ -58,6 +59,7 @@ export default abstract class BaseServiceV5<T extends Model> {
 
 
     host() {
+        // console.log('apiUrl: ' + this.apiUrl);
         return `${this.apiUrl}/site/v${this.version}/${this.serviceName}`;
     }
 }
